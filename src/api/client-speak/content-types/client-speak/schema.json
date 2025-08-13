@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_speaks",
+  "info": {
+    "singularName": "client-speak",
+    "pluralName": "client-speaks",
+    "displayName": "Client Speak"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "About": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -11,11 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "read_more_url": {
-      "type": "string",
-      "required": true
+    "Title1": {
+      "type": "string"
     },
-    "desktop_banner": {
+    "Title2": {
+      "type": "string"
+    },
+    "Title3": {
+      "type": "string"
+    },
+    "Desktop_banner": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -23,17 +28,20 @@
         "images"
       ]
     },
-    "phone_banner": {
+    "Phone_banner": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files"
+        "images"
       ]
     },
-    "tt": {
-      "type": "blocks"
+    "Alt_tag": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }
