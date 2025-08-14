@@ -455,7 +455,7 @@ export interface ApiHeroSectionHeroSection extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Desktop_banner: Schema.Attribute.Media<'images'> &
+    desktop_banner: Schema.Attribute.Media<'images'> &
       Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -478,7 +478,7 @@ export interface ApiHeroSectionHeroSection extends Struct.CollectionTypeSchema {
 export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
   collectionName: 'insights';
   info: {
-    displayName: 'Insights';
+    displayName: 'Insight';
     pluralName: 'insights';
     singularName: 'insight';
   };
@@ -491,8 +491,7 @@ export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Description: Schema.Attribute.Text & Schema.Attribute.Required;
-    file: Schema.Attribute.Media<'images' | 'files', true> &
-      Schema.Attribute.Required;
+    file: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
     hero_section: Schema.Attribute.Relation<
       'oneToOne',
       'api::hero-section.hero-section'

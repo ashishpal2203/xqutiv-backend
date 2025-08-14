@@ -4,7 +4,7 @@
   "info": {
     "singularName": "insight",
     "pluralName": "insights",
-    "displayName": "Insights"
+    "displayName": "Insight"
   },
   "options": {
     "draftAndPublish": true
@@ -25,10 +25,9 @@
     },
     "file": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
         "files"
       ]
     },
