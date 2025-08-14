@@ -23,11 +23,6 @@
       "type": "text",
       "required": true
     },
-    "hero_section": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::hero-section.hero-section"
-    },
     "file": {
       "type": "media",
       "multiple": true,
@@ -36,6 +31,11 @@
         "images",
         "files"
       ]
+    },
+    "hero_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hero-section.hero-section"
     }
   }
 }
