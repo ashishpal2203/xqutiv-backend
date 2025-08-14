@@ -11,6 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
     "Title1": {
       "type": "string"
     },
@@ -38,10 +42,6 @@
     },
     "Alt_tag": {
       "type": "string"
-    },
-    "slug": {
-      "type": "uid",
-      "required": true
     }
   }
 }
