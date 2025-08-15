@@ -42,9 +42,6 @@
     },
     "Alt_tag": {
       "type": "string"
-    },
-    "tmp": {
-      "type": "string"
     }
   }
 }

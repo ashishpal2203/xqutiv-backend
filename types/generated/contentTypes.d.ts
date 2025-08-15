@@ -469,7 +469,6 @@ export interface ApiHeroSectionHeroSection extends Struct.CollectionTypeSchema {
     Title1: Schema.Attribute.String;
     Title2: Schema.Attribute.String;
     Title3: Schema.Attribute.String;
-    tmp: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

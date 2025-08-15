@@ -34,7 +34,8 @@
     "hero_section": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::hero-section.hero-section"
+      "target": "api::hero-section.hero-section",
+      "mainField": "slug" 
     }
   }
 }
